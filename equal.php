@@ -1,6 +1,7 @@
 <?php
 include_once 'requests/Requests.php';
 include_once 'scraper/simple_html_dom.php';
+$input = "Tmpth81";
 class equal{
     public function equals($q){
         Requests::register_autoloader();
@@ -74,7 +75,7 @@ class equal{
 }
 
 $eq = new equal();
-$data=$eq->equals("Tmpth81");
+$data=$eq->equals($input);
 $eq->make_json($data);
 
 
